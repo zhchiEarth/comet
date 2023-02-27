@@ -1,0 +1,23 @@
+[profile.default]
+src = 'contracts'
+out = 'forge/out'
+libs = ['node_modules', 'forge/lib']
+test = 'forge/test'
+script = 'forge/script'
+cache_path  = 'forge/cache'
+fs_permissions = [{ access = "read-write", path = "./"}]
+optimizer = true
+optimizer_runs = 1
+# memory_limit = 33554432
+gas_limit = "18446744073709551615"
+# extra_output = ["evm.bytecode", "evm.deployedBytecode", "metadata", "devdoc", "userdoc", "metadata", "abi"]
+via_ir = true
+
+[profile.default.optimizer_details]
+constantOptimizer = true
+yul = true
+# this sets the `yulDetails` of the `optimizer_details` for the `default` profile
+[profile.default.optimizer_details.yulDetails]
+stackAllocation = true
+optimizerSteps = 'dhfoDgvulfnTUtnIf [xa[r]scLM cCTUtTOntnfDIul Lcul Vcul [j] Tpeul xa[rul] xa[r]cL gvif CTUca[r]LsTOtfDnca[r]Iulc] jmul[jul] VcTOcul jmul'
+

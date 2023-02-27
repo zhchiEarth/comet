@@ -1,0 +1,90 @@
+{
+  "network": "BNB Smart Chain Testnet",
+  "chainId":"97",
+  "governor": "0xc2767675300D5dB7E0802F06D680d10027e7e7BF",
+  "pauseGuardian": "0xc2767675300D5dB7E0802F06D680d10027e7e7BF",
+  "configurator": "0x5dC4e60698c836263d2672158e46245A8312D901",
+  "configuratorImpl": "0xdA8C665254769A35B96d05a81636D763cb151731",
+  "proxyAdmin": "0x267a257AB91478f51f39cd7ce6577EB44D2D1303",
+  "cometRewards": "0x5b1B8f9a66c77E881E7718fd7B2AcA71265DB59E",
+  "cometFactory": "0x4C97E62eaDFbADA3Cf3D829d2F6760312DF25076",
+  "tokens": [
+    {
+      "baseToken": "0x774C599C2e24C8007C90034Dcbc5022c24D4A3FD",
+      "decimals": 6,
+      "name": "Compound USDT",
+      "symbol": "cUSDTv3",
+      "asset": {
+        "addr": "0x8B739134ad6eC92d016eCB8e9A0Acf90c4144C3D",
+        "decimals": 18,
+        "price": 160000000000
+      }
+    },
+    {
+      "baseToken": "0xEA3321e26BeaAd0E25089ff066A333210AE86745",
+      "decimals": 6,
+      "name": "Compound USDC",
+      "symbol": "cUSDCv3",
+      "asset": {
+        "addr": "0x8B739134ad6eC92d016eCB8e9A0Acf90c4144C3D",
+        "decimals": 18,
+        "price": 160000000000
+      }
+    },
+    {
+      "baseToken": "0xB894F83a2020393a1E6a697541dD2bc52FD354D4",
+      "decimals": 18,
+      "name": "Compound BUSD",
+      "symbol": "cBUSDv3",
+      "asset": {
+        "addr": "0x8B739134ad6eC92d016eCB8e9A0Acf90c4144C3D",
+        "decimals": 18,
+        "price": 160000000000
+      }
+    },
+    {
+      "baseToken": "0x23ec78CaB686Acf5A9e7747daD2194c8AAEe0d28",
+      "decimals": 18,
+      "name": "Compound DAI",
+      "symbol": "cDAIv3",
+      "asset": {
+        "addr": "0x8B739134ad6eC92d016eCB8e9A0Acf90c4144C3D",
+        "decimals": 18,
+        "price": 160000000000
+      }
+    },
+    {
+      "baseToken": "0x8B739134ad6eC92d016eCB8e9A0Acf90c4144C3D",
+      "decimals": 18,
+      "name": "Compound WETH",
+      "symbol": "cWETHv3",
+      "asset": {
+        "addr": "0xc2F2af435E8DcE654c09ef6AF551e8AFA07658fA",
+        "decimals": 8,
+        "price": 2000000000
+      }
+    },
+    {
+      "baseToken": "0xc2F2af435E8DcE654c09ef6AF551e8AFA07658fA",
+      "decimals": 8,
+      "name": "Compound WBTC",
+      "symbol": "cWBTCv3",
+      "asset": {
+        "addr": "0x8B739134ad6eC92d016eCB8e9A0Acf90c4144C3D",
+        "decimals": 18,
+        "price": 5000000
+      }
+    },
+    {
+      "baseToken": "0xd3BC2740101c5D64F9352923445f083a7F189BF4",
+      "decimals": 18,
+      "name": "Compound WBNB",
+      "symbol": "cWBNBv3",
+      "asset": {
+        "addr": "0x8B739134ad6eC92d016eCB8e9A0Acf90c4144C3D",
+        "decimals": 18,
+        "price": 500000000
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+    "governor": "governor",
+    "pauseGuardian": "0xbbf3f1421d886e9b2c5d716b5192ac998af2012c",
+    "configurator": "0x322813Fd9A801c5507c9de605d63CEA4f2CE6c44",
+    "configuratorImpl": "0xc6e7DF5E7b4f2A278906862b61205850344D4e7d",
+    "proxyAdmin": "0x59b670e9fA9D0A427751Af201D676719a970857b",
+    "cometRewards": "0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1",
+    "cometFactory": "0xa85233C63b9Ee964Add6F2cffe00Fd84eb32338f",
+    "assets": [
+        {
+            "totalSupply": 100000000000000e18,
+            "name": "CB_ETH",
+            "symbol": "CB_ETH",
+            "price": 98104218,
+            "decimals": 18
+        },
+        {
+            "totalSupply": 100000000000000e18,
+            "name": "WST_ETH",
+            "symbol": "WST_ETH",
+            "price": 98973832,
+            "decimals": 18
+        }
+    ],
+    "USDC": {
+        "name": "Compound USDC",
+        "symbol": "cUSDCv3",
+        "baseToken": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "baseTokenPriceFeed": "0x8fFfFfd4AfB6115b954Bd326cbe7B4BA576818f6",
+        "governor": "0x6d903f6003cca6255d85cca4d3b5e5146dc33925",
+        "pauseGuardian": "0xbbf3f1421d886e9b2c5d716b5192ac998af2012c",
+        "configuration": {
+            "supplyKink": 800000000000000000,
+            "supplyPerYearInterestRateSlopeLow": 32500000000000000,
+            "supplyPerYearInterestRateSlopeHigh": 400000000000000000,
+            "supplyPerYearInterestRateBase": 0,
+            "borrowKink": 800000000000000000,
+            "borrowPerYearInterestRateSlopeLow": 35000000000000000,
+            "borrowPerYearInterestRateSlopeHigh": 250000000000000000,
+            "borrowPerYearInterestRateBase": 15000000000000000,
+            "storeFrontPriceFactor": 500000000000000000,
+            "trackingIndexScale": 1000000000000000,
+            "baseTrackingSupplySpeed": 0,
+            "baseTrackingBorrowSpeed": 0,
+            "baseMinForRewards": 1000000000000,
+            "baseBorrowMin": 100000000,
+            "targetReserves": 5000000000000
+        }
+    },
+    "WETH": {
+        "name": "Compound USDC",
+        "symbol": "cUSDCv3",
+        "baseToken": "0x7a2088a1bfc9d81c55368ae168c2c02570cb814f",
+        "baseTokenAddress": "0x7a2088a1bfc9d81c55368ae168c2c02570cb814f",
+        "baseTokenPriceFeed": "0x4a679253410272dd5232b3ff7cf5dbb88f295319",
+        "CometExt": "0x09635f643e140090a9a8dcd712ed6285858cebef",
+        "cometProxy": "0xc5a5c42992decbae36851359345fe25997f5c42d",
+        "governor": "0x6d903f6003cca6255d85cca4d3b5e5146dc33925",
+        "pauseGuardian": "0xbbf3f1421d886e9b2c5d716b5192ac998af2012c",
+        "configuration": {
+            "supplyKink": "900000000000000000",
+            "supplyPerYearInterestRateSlopeLow": "28382400000000000",
+            "supplyPerYearInterestRateSlopeHigh": "606656770600000000",
+            "supplyPerYearInterestRateBase": "0",
+            "borrowKink": "900000000000000000",
+            "borrowPerYearInterestRateSlopeLow": "51715000020000000",
+            "borrowPerYearInterestRateSlopeHigh": "517150033900000000",
+            "borrowPerYearInterestRateBase": "500000000000000000",
+            "storeFrontPriceFactor": "500000000000000000",
+            "trackingIndexScale": "1000000000000000",
+            "baseTrackingSupplySpeed": "0",
+            "baseTrackingBorrowSpeed": "0",
+            "baseMinForRewards": "1000000000000000000000",
+            "baseBorrowMin": "100000000000000000",
+            "targetReserves": "5000000000000000000000"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+name: Run Coverage
+on:
+  push:
+    branches:
+      - main
+jobs:
+  run-coverage:
+    name: Run coverage
+    runs-on: ubuntu-latest
+    env:
+      NODE_OPTIONS: '--max-old-space-size=4096'
+      OPTIMIZER_DISABLED: true
+      ETHERSCAN_KEY: ${{ secrets.ETHERSCAN_KEY }}
+      SNOWTRACE_KEY: ${{ secrets.SNOWTRACE_KEY }}
+      INFURA_KEY: ${{ secrets.INFURA_KEY }}
+      POLYGONSCAN_KEY: ${{ secrets.POLYGONSCAN_KEY }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          cache: 'yarn'
+          node-version: '16'
+
+      - name: Install packages
+        run: yarn install --non-interactive --frozen-lockfile && yarn build
+
+      - name: Run tests
+        run: yarn cover
+
+      - name: Upload the coverage reports to Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}

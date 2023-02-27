@@ -1,0 +1,29 @@
+{
+  "network": "local",
+  "chainId":"31337",
+  "governor": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "pauseGuardian": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "configurator": "",
+  "configuratorImpl": "",
+  "proxyAdmin": "",
+  "cometRewards": "",
+  "cometFactory": "",
+  "cometProxy": {
+    "cUSDTv3": "",
+    "cUSDCv3": "",
+    "cBUSDv3": "",
+    "cDAIv3": "",
+    "cWETHv3": "",
+    "cWBTCv3": "",
+    "cWBNBv3": ""
+  },
+  "cometExt": {
+    "cUSDTv3": "",
+    "cUSDCv3": "",
+    "cBUSDv3": "",
+    "cDAIv3": "",
+    "cWETHv3": "",
+    "cWBTCv3": "",
+    "cWBNBv3": ""
+  }
+}

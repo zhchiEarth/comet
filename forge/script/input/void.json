@@ -1,0 +1,90 @@
+{
+  "network": "local",
+  "chainId":"31337",
+  "governor": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "pauseGuardian": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "configurator": "",
+  "configuratorImpl": "",
+  "proxyAdmin": "",
+  "cometRewards": "",
+  "cometFactory": "",
+  "tokens": [
+    {
+      "baseToken": "",
+      "decimals": 6,
+      "name": "Compound USDT",
+      "symbol": "cUSDTv3",
+      "asset": {
+        "addr": "",
+        "decimals": 18,
+        "price": 160000000000
+      }
+    },
+    {
+      "baseToken": "",
+      "decimals": 6,
+      "name": "Compound USDC",
+      "symbol": "cUSDCv3",
+      "asset": {
+        "addr": "",
+        "decimals": 18,
+        "price": 160000000000
+      }
+    },
+    {
+      "baseToken": "",
+      "decimals": 18,
+      "name": "Compound BUSD",
+      "symbol": "cBUSDv3",
+      "asset": {
+        "addr": "",
+        "decimals": 18,
+        "price": 160000000000
+      }
+    },
+    {
+      "baseToken": "",
+      "decimals": 18,
+      "name": "Compound DAI",
+      "symbol": "cDAIv3",
+      "asset": {
+        "addr": "",
+        "decimals": 18,
+        "price": 160000000000
+      }
+    },
+    {
+      "baseToken": "",
+      "decimals": 18,
+      "name": "Compound WETH",
+      "symbol": "cWETHv3",
+      "asset": {
+        "addr": "",
+        "decimals": 8,
+        "price": 2000000000
+      }
+    },
+    {
+      "baseToken": "",
+      "decimals": 8,
+      "name": "Compound WBTC",
+      "symbol": "cWBTCv3",
+      "asset": {
+        "addr": "",
+        "decimals": 18,
+        "price": 5000000
+      }
+    },
+    {
+      "baseToken": "",
+      "decimals": 18,
+      "name": "Compound WBNB",
+      "symbol": "cWBNBv3",
+      "asset": {
+        "addr": "",
+        "decimals": 18,
+        "price": 500000000
+      }
+    }
+  ]
+}
