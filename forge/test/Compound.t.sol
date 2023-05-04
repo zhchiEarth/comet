@@ -156,7 +156,8 @@ contract CompoundTest is Test {
         // comet.baseSupplyIndex();
         // comet.baseBorrowIndex();
         // comet.supplyPerSecondInterestRateBase();
-        // uint256 utilization = comet.getUtilization1();
+        uint256 utilization = comet.getUtilization();
+        console2.log('utilization', utilization);
         // // │   ├─ emit borrowRateEvent(supplyPerSecondInterestRateBase: 0, supplyPerSecondInterestRateSlopeLow: 951293759, utilization: 266666666666666666)
         // uint256 supplyRate = comet.getSupplyRate1(utilization);
         // uint256 borrowRate = comet.getBorrowRate1(utilization);
@@ -172,6 +173,35 @@ contract CompoundTest is Test {
         console2.log('timestamp', block.timestamp);
 
         // console2.log(comet.balanceOf(address(this)));
+    }
+
+    function test_utilities() public {
+        vm.createSelectFork(vm.envString('BSC_TESTNET_RPC_URL'));
+
+        Comet comet1 = Comet(payable(0x970831E48235Ff8924d2ed18C873f9F2f4d57260));
+        // Comet comet1 = Comet(payable(0x1a97377185FC272bd7054Ff7D474A7b2D2a49cae));
+        address baseToken = 0x774C599C2e24C8007C90034Dcbc5022c24D4A3FD;
+        address wethToken = 0x8B739134ad6eC92d016eCB8e9A0Acf90c4144C3D;
+        address _userA = 0xB69d057bf23B0fb538b3705C5374840aFFEa375A;
+        address _user = 0xc2767675300D5dB7E0802F06D680d10027e7e7BF;
+
+        vm.startPrank(_userA);
+        ERC20(baseToken).approve(address(comet1), 16000e6);
+        comet1.supply(baseToken, 16000e6);
+        vm.stopPrank();
+
+        // CB_ETH.allocateTo(alice, 100e18);
+        vm.startPrank(_user);
+        ERC20(wethToken).approve(address(comet1), 10e18);
+        comet1.supply(wethToken, 10e18);
+        vm.stopPrank();
+
+        vm.prank(_user);
+        comet1.withdraw(baseToken, 15000e6);
+
+        // vm.warp(block.timestamp + 100);
+        uint256 utilization = comet1.getUtilization();
+        console2.log('utilization', utilization);
     }
 
     // function testCbETHSwapViaUniswap() external {

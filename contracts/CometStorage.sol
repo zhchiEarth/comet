@@ -47,14 +47,14 @@ contract CometStorage {
     }
 
     /// @dev Aggregate variables tracked for the entire market
-    uint64 internal baseSupplyIndex;
-    uint64 internal baseBorrowIndex;
-    uint64 internal trackingSupplyIndex;
-    uint64 internal trackingBorrowIndex;
-    uint104 internal totalSupplyBase;
-    uint104 internal totalBorrowBase;
-    uint40 internal lastAccrualTime;
-    uint8 internal pauseFlags;
+    uint64 public baseSupplyIndex;
+    uint64 public baseBorrowIndex;
+    uint64 public trackingSupplyIndex;
+    uint64 public trackingBorrowIndex;
+    uint104 public totalSupplyBase;
+    uint104 public totalBorrowBase;
+    uint40 public lastAccrualTime;
+    uint8 public pauseFlags;
 
     /// @notice Aggregate variables tracked for each collateral asset
     mapping(address => TotalsCollateral) public totalsCollateral;
@@ -63,7 +63,7 @@ contract CometStorage {
     mapping(address => mapping(address => bool)) public isAllowed;
 
     /// @notice The next expected nonce for an address, for validating authorizations via signature
-    mapping(address => uint) public userNonce;
+    mapping(address => uint256) public userNonce;
 
     /// @notice Mapping of users to base principal and other basic data
     mapping(address => UserBasic) public userBasic;

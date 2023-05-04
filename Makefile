@@ -24,13 +24,13 @@ update:; forge update
 # trace-local  :; forge test -vvv
 # clean  :; forge clean
 # snapshot :; forge snapshot
-deploy-bsc_testnet-configurator :; forge script forge/script/Configurator.s.sol:ConfiguratorScript --rpc-url  --rpc-url ${BSC_TESTNET_RPC_URL}  --broadcast --etherscan-api-key ${BSC_API_KEY}  --verify
-deploy-avalanche_fuji-configurator :; forge script forge/script/Configurator.s.sol:ConfiguratorScript --rpc-url  --rpc-url ${AVALANCHE_FUJI_RPC_URL}  --broadcast --etherscan-api-key ${AVALANCHE_API_KEY}  --verify
-deploy-polygon_mumbai-configurator :; forge script forge/script/Configurator.s.sol:ConfiguratorScript --rpc-url  --rpc-url ${POLYGON_MUMBAI_RPC_URL}  --broadcast --etherscan-api-key ${POLYGON_API_KEY}  --verify
+deploy-bsc_testnet-configurator :; forge script forge/script/Configurator.s.sol:ConfiguratorScript --rpc-url   ${BSC_TESTNET_RPC_URL} --private-key ${PRIVATE_KEY}  --broadcast --etherscan-api-key ${BSC_API_KEY}  --verify -vvvv
+deploy-avalanche_fuji-configurator :; forge script forge/script/Configurator.s.sol:ConfiguratorScript --rpc-url   ${AVALANCHE_FUJI_RPC_URL} --private-key ${PRIVATE_KEY}  --broadcast --etherscan-api-key ${AVALANCHE_API_KEY}  --verify -vvvv
+deploy-polygon_mumbai-configurator :; forge script forge/script/Configurator.s.sol:ConfiguratorScript --rpc-url ${POLYGON_MUMBAI_RPC_URL} --private-key ${PRIVATE_KEY} --broadcast --etherscan-api-key ${POLYGON_API_KEY}  --verify -vvvv
 
-deploy-bsc_testnet-comet :; forge script Comet.s.sol:CometScript --rpc-url  --rpc-url ${BSC_TESTNET_RPC_URL}  --broadcast --etherscan-api-key ${BSC_API_KEY}  --verify
-deploy-avalanche_fuji-comet :; forge script Comet.s.sol:CometScript --rpc-url  --rpc-url ${AVALANCHE_FUJI_RPC_URL}  --broadcast --etherscan-api-key ${AVALANCHE_API_KEY}  --verify
-deploy-polygon_mumbai-comet :; forge script Comet.s.sol:CometScript --rpc-url  --rpc-url ${POLYGON_MUMBAI_RPC_URL}  --broadcast --etherscan-api-key ${POLYGON_API_KEY}  --verify
+deploy-bsc_testnet-comet :; forge script forge/script/Comet.s.sol:CometScript --rpc-url   ${BSC_TESTNET_RPC_URL} --private-key ${PRIVATE_KEY} --broadcast --etherscan-api-key ${BSC_API_KEY}  --verify -vvvv
+deploy-avalanche_fuji-comet :; forge script forge/script/Comet.s.sol:CometScript --rpc-url  ${AVALANCHE_FUJI_RPC_URL} --private-key ${PRIVATE_KEY} --broadcast --etherscan-api-key ${AVALANCHE_API_KEY}  --verify -vvvv
+deploy-polygon_mumbai-comet :; forge script forge/script/Comet.s.sol:CometScript --rpc-url  ${POLYGON_MUMBAI_RPC_URL} --private-key ${PRIVATE_KEY} --broadcast --etherscan-api-key ${POLYGON_API_KEY}  --verify -vvvv
 
 
 # local

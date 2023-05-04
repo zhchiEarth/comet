@@ -98,7 +98,7 @@ contract Comet is CometMainInterface {
     uint8 public immutable override numAssets;
 
     /// @notice Factor to divide by when accruing rewards in order to preserve 6 decimals (i.e. baseScale / 1e6)
-    uint256 internal immutable accrualDescaleFactor;
+    uint256 public immutable accrualDescaleFactor;
 
     /** Collateral asset configuration (packed) **/
 

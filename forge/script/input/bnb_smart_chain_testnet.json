@@ -1,13 +1,13 @@
 {
   "network": "BNB Smart Chain Testnet",
-  "chainId":"97",
+  "chainId": "97",
   "governor": "0xc2767675300D5dB7E0802F06D680d10027e7e7BF",
   "pauseGuardian": "0xc2767675300D5dB7E0802F06D680d10027e7e7BF",
-  "configurator": "0x5dC4e60698c836263d2672158e46245A8312D901",
-  "configuratorImpl": "0xdA8C665254769A35B96d05a81636D763cb151731",
-  "proxyAdmin": "0x267a257AB91478f51f39cd7ce6577EB44D2D1303",
-  "cometRewards": "0x5b1B8f9a66c77E881E7718fd7B2AcA71265DB59E",
-  "cometFactory": "0x4C97E62eaDFbADA3Cf3D829d2F6760312DF25076",
+  "configurator": "0xeBC24f4Fe831B5090A0fA2E609d0197aE72Fa6E5",
+  "configuratorImpl": "0x8f61B2A29a0B17eE8C8f78E18CCd294f16b75Cd5",
+  "proxyAdmin": "0x4ac54b5c09aB06F2A354F36c14EE670EC1C83E19",
+  "cometRewards": "0x9C3634C59e145E24a1B9215E9E343952D8c91280",
+  "cometFactory": "0xBDBB4FaaF0AD74f5aDa593713bA4bc14e1f3d62C",
   "tokens": [
     {
       "baseToken": "0x774C599C2e24C8007C90034Dcbc5022c24D4A3FD",
